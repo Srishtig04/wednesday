@@ -1,0 +1,198 @@
+@font-face {
+  font-family: Neuton;
+  src: url(./Neuton-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Neuton;
+  src: url(./Neuton-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Neuton;
+  src: url(./Neuton-ExtraLight.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Neuton;
+  src: url(./Neuton-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Neuton;
+  src: url(./Neuton-Regular.ttf);
+  font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Neuton;
+}
+
+#main {
+  background-color: #f5f3ea;
+  overflow-x: hidden;
+}
+/* vw stands for viewport width 
+vh viewport height means puri screen ki width and height qki % parent element pr depend krti hai aur main ko height and width ni di h jisse locomotive lgane me koi prob na ho  */
+
+#page1 {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  border-bottom: 1px solid#000000;
+}
+
+#nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 70px 20px 45px;
+  font-family: "DM Sans 14pt Light";
+}
+
+#nav h1 {
+  font-size: 32px;
+  font-family: Neuton;
+}
+span {
+  color: #ff5858;
+  font-size: 42px;
+  margin-right: -5px;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 38px;
+}
+#nav2 h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  padding-top: 10px;
+}
+#nav3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+#nav3 h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff5858;
+}
+#nav3 :nth-child(3) {
+  background-color: black;
+  color: #ffff;
+  padding: 12px 18px;
+  border-radius: 5px;
+}
+
+#nav3 i {
+  font-size: 20px;
+}
+
+#center {
+  text-align: center;
+  padding-top: 90px;
+}
+
+#center h1 {
+  font-size: 72px;
+}
+
+#center p {
+  font-size: 18px;
+  font-family: "DM Sans 14pt Light";
+  margin: 20px 0px 0px;
+}
+
+#center :nth-child(1) {
+  color: #ff5858;
+}
+
+#page1 img {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 60px;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#page2 h1 {
+  font-size: 50px;
+  font-family: Neuton;
+  letter-spacing: 1.14px;
+}
+
+#page2 p {
+  width: 50%;
+  font-family: "DM Sans 14pt Light";
+  font-weight: 500;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  color: #777;
+}
+
+#page2 #elem-container {
+  background-color: #f5f3ea;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#elem-container .elem {
+  height: 80vh;
+  width: 30%;
+  /* background-color: #ffb07b; */
+  margin: 20px 10px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+.elem img {
+  height: 90%;
+  width: 100%;
+  border: 1px solid#151B31;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+}
+
+.elem h2 {
+  font-size: 32px;
+  margin-top: 5px;
+  color: #151b31;
+}
+
+#elem-container .elem:hover{
+  background-color: #ffb07b;
+  transition: all ease 0.5s;
+}
+
+#elem-container .elem:hover img{
+  filter: grayscale(2);
+
+}
