@@ -104,18 +104,23 @@ span {
 #nav3 i {
   font-size: 20px;
 }
-
+#nav #menu {
+  font-size: 25px;
+  font-weight: 900;
+  color: #ff5858;
+  display: none;
+}
 #center {
   text-align: center;
   padding-top: 90px;
 }
 
 #center h1 {
-  font-size: 72px;
+  font-size: 5.5vw;
 }
 
 #center p {
-  font-size: 18px;
+  font-size: 1.6vw;
   font-family: "DM Sans 14pt Light";
   margin: 20px 0px 0px;
 }
@@ -167,7 +172,6 @@ span {
 #elem-container .elem {
   height: 80vh;
   width: 30%;
-  /* background-color: #ffb07b; */
   margin: 20px 10px;
   padding: 5px;
   border-radius: 5px;
@@ -187,12 +191,80 @@ span {
   color: #151b31;
 }
 
-#elem-container .elem:hover{
+#elem-container .elem:hover {
   background-color: #ffb07b;
   transition: all ease 0.5s;
 }
 
-#elem-container .elem:hover img{
+#elem-container .elem:hover img {
   filter: grayscale(2);
+}
 
+@media (max-width: 600px) {
+  #page1 {
+    min-height: 80vh;
+    border-bottom: 1px solid#000000;
+  }
+  #nav {
+    gap: 45vw;
+  }
+  #nav h1 {
+    font-size: 5vw;
+  }
+  #nav span {
+    font-size: 7vw;
+    margin-right: -1px;
+  }
+  #nav2 {
+    display: none;
+  }
+  #nav3 {
+    display: none;
+  }
+  #nav #menu {
+    display: block;
+  }
+
+#center {
+  padding-top: 50px;
+}
+
+#center h1 {
+  font-size: 10vw;
+}
+#center p {
+  font-size: 4vw;
+  margin-top: 8px;
+}
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 40px;
+  text-align: center;
+}
+#page2 h1 {
+  font-size: 10vw;
+line-height: 30px;
+}
+
+#page2 p {
+  width: 95%;
+  margin-top: 20px;
+}
+#page2 #elem-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#elem-container .elem {
+  height: 70vh;
+  width: 80%;
+}
+.elem img {
+  height: 90%;
+  width: 100%;
+  border: 1px solid#151B31;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+}
 }
